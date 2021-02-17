@@ -32,9 +32,7 @@ RUN export DIR_TMP="$(mktemp -d)" \
   && tar -zxf ${DIR_TMP}/caddy/caddy.tar.gz -C ${DIR_TMP}/caddy \
   && mv ${DIR_TMP}/caddy/caddy /usr/local/bin/caddy \
   && curl -fsSL https://filebrowser.org/get.sh | bash \
-  && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
-  || echo "continue..." \
-  && echo "Using Asia/Shanghai timezone."
+  && echo "Done."
 
 
 
