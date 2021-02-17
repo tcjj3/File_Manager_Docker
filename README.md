@@ -13,7 +13,7 @@ File Manager Docker for GK2A-Docker and Himawari-8_Docker.
 [tcjj3@debian]$ sudo systemctl enable docker && sudo systemctl start docker
 ```
 
-2. Run Himawari-8_Docker:
+2. Run File_Manager_Docker:
 ```
 [tcjj3@debian]$ docker volume create xrit-rx
 [tcjj3@debian]$ docker volume create himawari-rx
