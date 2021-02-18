@@ -1,6 +1,7 @@
 # File_Manager_Docker
 File Manager Docker for GK2A-Docker and Himawari-8_Docker.
 
+
 ## Start:
 
 1. Install docker-ce:
@@ -25,5 +26,30 @@ File Manager Docker for GK2A-Docker and Himawari-8_Docker.
  -v xrit-rx:/usr/local/bin/file_manager/xrit-rx \
  -v himawari-rx:/usr/local/bin/file_manager/himawari-rx \
  tcjj3/file_manager_docker:latest
+```
+
+
+## Get Files
+
+### Local Disk
+1. xrit-rx:
+```
+[tcjj3@debian]$ cd /var/lib/docker/volumes/xrit-rx/_data/src/received
+```
+2. himawari-rx:
+```
+[tcjj3@debian]$ cd /var/lib/docker/volumes/himawari-rx/_data/src/received
+```
+
+### Via HTTP
+
+1. Website (Default port):
+```
+http://[Your IP]:5006
+```
+
+2. Filebrowser (Default port):
+```
+http://[Your IP]:9999
 ```
 
