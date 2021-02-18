@@ -34,11 +34,11 @@ File Manager Docker for GK2A-Docker and Himawari-8_Docker.
 ### Local Disk
 1. xrit-rx:
 ```
-[tcjj3@debian]$ cd /var/lib/docker/volumes/xrit-rx/_data/src/received
+[tcjj3@debian]$ cd /var/lib/docker/volumes/xrit-rx/_data
 ```
 2. himawari-rx:
 ```
-[tcjj3@debian]$ cd /var/lib/docker/volumes/himawari-rx/_data/src/received
+[tcjj3@debian]$ cd /var/lib/docker/volumes/himawari-rx/_data
 ```
 
 ### Via HTTP
