@@ -31,7 +31,9 @@ EOF
 
 
 
-cd /usr/local/bin/file_manager
+# Path to save "filebrowser.db"
+#cd /usr/local/bin/file_manager
+cd /opt/file_manager_config
 
 
 

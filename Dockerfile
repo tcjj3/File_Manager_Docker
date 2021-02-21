@@ -19,6 +19,7 @@ RUN export DIR_TMP="$(mktemp -d)" \
                                                 cron \
                                                 vim \
   && mkdir -p /etc/caddy \
+  && mkdir -p /opt/file_manager_config \
   && mkdir -p /usr/local/bin/file_manager \
   && mkdir -p /usr/local/bin/file_manager/xrit-rx \
   && mkdir -p /usr/local/bin/file_manager/himawari-rx \
