@@ -3,7 +3,10 @@
 
 
 
+
+
 /etc/init.d/cron restart
+
 
 
 
@@ -26,13 +29,21 @@ EOF
 
 
 
-#cd /usr/local/bin/file_manager
-cd /opt
+
+
+cd /usr/local/bin/file_manager
+
+
+
 
 
 
 /usr/local/bin/caddy --conf=/etc/caddy/Caddyfile &
 /usr/local/bin/filebrowser -r /usr/local/bin/file_manager -p 9999 -a 0.0.0.0
+
+
+
+
 
 
 

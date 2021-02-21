@@ -17,6 +17,7 @@ RUN export DIR_TMP="$(mktemp -d)" \
                                                 procps \
                                                 psmisc \
                                                 cron \
+                                                vim \
   && mkdir -p /etc/caddy \
   && mkdir -p /usr/local/bin/file_manager \
   && mkdir -p /usr/local/bin/file_manager/xrit-rx \
@@ -32,6 +33,7 @@ RUN export DIR_TMP="$(mktemp -d)" \
   && tar -zxf ${DIR_TMP}/caddy/caddy.tar.gz -C ${DIR_TMP}/caddy \
   && mv ${DIR_TMP}/caddy/caddy /usr/local/bin/caddy \
   && curl -fsSL https://filebrowser.org/get.sh | bash \
+  && rm -rf ${DIR_TMP} \
   && echo "Done."
 
 
