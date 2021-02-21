@@ -18,11 +18,13 @@ File Manager Docker for GK2A-Docker and Himawari-8_Docker.
 ```
 [tcjj3@debian]$ docker volume create xrit-rx
 [tcjj3@debian]$ docker volume create himawari-rx
+[tcjj3@debian]$ docker volume create file_manager_config
 [tcjj3@debian]$ docker run -d -i -t \
  --restart always \
  --name=File_Manager \
  -p 5006:5006 \
  -p 9999:9999 \
+ -v file_manager_config:/opt/file_manager_config \
  -v xrit-rx:/usr/local/bin/file_manager/xrit-rx \
  -v himawari-rx:/usr/local/bin/file_manager/himawari-rx \
  tcjj3/file_manager_docker:latest
