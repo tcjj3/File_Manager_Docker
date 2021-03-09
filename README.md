@@ -6,8 +6,8 @@ File Manager Docker for GK2A-Docker and Himawari-8_Docker.
 
 1. Install docker-ce:
 ```
-[tcjj3@debian]$ sudo dnf install curl
-[tcjj3@debian]$ sudo curl -fsSL get.docker.com -o get-docker.sh
+[tcjj3@debian]$ sudo apt install curl
+[tcjj3@debian]$ curl -fsSL get.docker.com -o get-docker.sh
 [tcjj3@debian]$ sudo sh get-docker.sh
 [tcjj3@debian]$ sudo groupadd docker
 [tcjj3@debian]$ sudo usermod -aG docker $USER
