@@ -16,10 +16,10 @@ File Manager Docker for GK2A-Docker and Himawari-8_Docker.
 
 2. Run File_Manager_Docker:
 ```
-[tcjj3@debian]$ docker volume create xrit-rx
-[tcjj3@debian]$ docker volume create himawari-rx
-[tcjj3@debian]$ docker volume create file_manager_config
-[tcjj3@debian]$ docker run -d -i -t \
+[tcjj3@debian]$ sudo docker volume create xrit-rx
+[tcjj3@debian]$ sudo docker volume create himawari-rx
+[tcjj3@debian]$ sudo docker volume create file_manager_config
+[tcjj3@debian]$ sudo docker run -d -i -t \
  --restart always \
  --name=File_Manager \
  -p 5006:5006 \
