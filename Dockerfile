@@ -21,8 +21,6 @@ RUN export DIR_TMP="$(mktemp -d)" \
   && mkdir -p /etc/caddy \
   && mkdir -p /opt/file_manager_config \
   && mkdir -p /usr/local/bin/file_manager \
-  && mkdir -p /usr/local/bin/file_manager/xrit-rx \
-  && mkdir -p /usr/local/bin/file_manager/himawari-rx \
   && mkdir caddy \
   && if [ "$(dpkg --print-architecture)" = "armhf" ]; then \
         ARCH="arm7"; \
